@@ -1,0 +1,13 @@
+<main>
+
+    {{> partials oneBeer}}
+</main>
+<article>
+<p><b>Food Pairing<b></p>
+<ul>
+{{#each oneBeer.food_pairing}}
+<li> {{this}} </li>
+{{/each}}
+</ul>
+    <p>{{this.brewers_tips}}</p>
+</article> 
